@@ -12,6 +12,10 @@ namespace CS50xWeek1
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine(new SomeOtherCourse());
+            
+
             var service = new MovieService();
 
             //List Theaters
@@ -71,5 +75,33 @@ namespace CS50xWeek1
 
             Console.ReadLine();
         }
+
+       
     }
+
+
+    public class Course
+    {
+        public string Name { get; set; }
+        public string Location { get; set; }
+
+        public override string ToString()
+        {
+            Console.WriteLine("something");
+            return base.ToString();
+        }
+    }
+
+    class SomeOtherCourse : Course
+    {
+        public string Grade { get; set; }
+
+        public override string ToString()
+        {
+            var output = base.ToString();
+            Console.WriteLine("something else");
+            return output;
+        }
+    }
+
 }

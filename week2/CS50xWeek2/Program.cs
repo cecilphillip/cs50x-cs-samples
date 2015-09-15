@@ -13,7 +13,7 @@ namespace CS50xWeek2
     {
         static void Main(string[] args)
         {
-            ReadTextFile();
+            WriteZipFile();
             Console.Read();
         }
 
@@ -26,6 +26,7 @@ namespace CS50xWeek2
                 service.ScheduleMovie(null, DateTime.Now);
 
                 // what happens here
+
             }
             catch (NullReferenceException ex)
             {
