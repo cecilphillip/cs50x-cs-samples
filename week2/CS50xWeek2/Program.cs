@@ -88,14 +88,14 @@ namespace CS50xWeek2
                 using (ZipArchive archive = new ZipArchive(zipToOpen, ZipArchiveMode.Update))
                 {
                     ZipArchiveEntry readmeEntry = archive.CreateEntry("hi.txt");
-                    using (StreamWriter writer = new StreamWriter(readmeEntry.Open()))
-                    {
-                        writer.WriteLine("Hi Mom!");
-                        writer.WriteLine("========================");
-                    }
+                    //using (StreamWriter writer = new StreamWriter(readmeEntry.Open()))
+                    //{
+                    //    writer.WriteLine("Hi Mom!");
+                    //    writer.WriteLine("========================");
+                    //}
 
                     archive.CreateEntryFromFile("quotes.txt", "quotes.txt");
-                    archive.CreateEntry("me").Open();
+                   // archive.CreateEntry("me").Open();
                 }
             }
         }

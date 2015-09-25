@@ -13,7 +13,7 @@ namespace Week3Services.Test
             var events = service.GetEvents();
 
             Assert.IsNotNull(events);
-
+            
         }
 
         [TestMethod]

@@ -57,7 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Week3Services\Week3Services.csproj">
+    <ProjectReference Include="..\Week3Services\Week3Services.csproj">
       <Project>{374b793f-cb05-4ba5-ac51-7e70a3ed6f35}</Project>
       <Name>Week3Services</Name>
     </ProjectReference>
