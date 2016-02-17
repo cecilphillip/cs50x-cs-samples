@@ -12,6 +12,7 @@ namespace Services
         public string Description { get; set; }
         public DateTime ReleaseDate  { get; set; }
         public int DurationInMinutes { get; set; }
+        public string StudioName { get; set; }
         public IList<Actor> Actors { get; set; }
     }
 }
